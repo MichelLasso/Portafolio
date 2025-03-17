@@ -29,6 +29,11 @@ body{
     padding-top: 4vw;
     flex-wrap: wrap;
 }
+#modoDiaNoche{
+    width: 4vw;
+    height: 4vw;
+    background-color: #663845;
+}
 .menu{
     width: 100vw;
     display: flex;
@@ -126,6 +131,9 @@ h3{
 .part3{
     border-top: 6px solid #663845;
 }
+.textFrase{
+    display: flex;
+}
 .proyectos{
     width: 30vw;
     padding: 2vw;
@@ -168,13 +176,37 @@ h4{
     font-family: sans-serif;
     text-align: center;
 }
+.contGmail{
+    display: flex;
+    margin-top: -3vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14vw;
+    gap: 20px;
+}
+.imgGmail{
+    width: 2.3vw;
+}
+.gmail{
+    width: 8vw;
+    height: 3vw;
+    border-radius: 1vw;
+    background-color: #e894a7;
+    font-family: ttf;
+    font-size: 1.3rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 3px #663845;
+}
 .texto{
     font-size: 5rem;
     font-family: titulos;
-    margin-top: -5vw;
     display: flex;
     justify-content: center;
     color: #663845;
+    margin-top: 4vw;
 }
 .contProyectos{
     margin-top: 5vw;
@@ -319,6 +351,7 @@ span{
 }
 .textContacto{
     padding: 5vw;
+    margin-top: 24vw;
     color: #663845;
     text-align: center;
     font-family: ttf;
@@ -334,24 +367,36 @@ span{
     width: 1.3vw;
     height: 1.3vw;
 }
+.gmail:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
 .derechos{
     font-size: 1rem;
-    padding-bottom: 2vw;
     align-items: center;
     display: flex;
     color: #663845;
     font-family: titulos;
     justify-content: center;
 }
-.flecha{
-    width: 0vw;
-    height: 0vw;
-    border-style: solid;
-    transform: rotatex(190deg);
-    border-width: 0vw 3vw 5vw 3vw;
-    padding-bottom: 3vw;
-    transition: all 0.3s ease-in-out;
-    border-color: transparent transparent #663845 transparent;
+
+.HojaDeVida{
+    width: 8vw;
+    height: 3vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    height: 3vw;
+    font-size: 1rem;
+    border: none;
+    color: #663845;
+    box-shadow: 0px 3px 3px #663845;
+}
+.HojaDeVida:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 @media (max-width: 718px) {
     .textContacto{
@@ -455,5 +500,16 @@ span{
     .github{
         width: 17vw;
         height: 17vw;
+    }
+    .gmail{
+        width: 15vw;
+        height: 6vw;
+    }
+    .imgGmail{
+        width: 5vw;
+    }
+    .HojaDeVida{
+        width: 17vw;
+        height: 6vw;
     }
 }
